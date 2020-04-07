@@ -1,6 +1,6 @@
 /**
  * Day 001
- * String Peeler
+ * String peeler
  *
  * Your goal is to create a function that removes the first and last letters of a string.
  * Strings with two characters or less are considered invalid.
