@@ -48,9 +48,12 @@ const printDiamond = (n) => {
     row += drawRow(stars, "*");
     row += drawRow(spaces, " ");
 
-    console.log(row);
-    row = "";
+    if (i !== n - 1) {
+      row += "\n";
+    }
   }
+
+  return row;
 };
 
-printDiamond(11);
+console.log(printDiamond(11));
