@@ -27,9 +27,8 @@ const drawRow = (qty, replaceWith) => {
 };
 
 const printDiamond = (n) => {
-  if (n % 2 === 0) {
-    console.log("Must be an odd number");
-    return null;
+  if (n % 2 === 0 || n < 0) {
+    return "The number should be odd and positive";
   }
 
   let row = "";
@@ -56,4 +55,4 @@ const printDiamond = (n) => {
   return row;
 };
 
-console.log(printDiamond(11));
+console.log(printDiamond(-11));
